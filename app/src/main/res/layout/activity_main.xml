@@ -1,67 +1,111 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:orientation="vertical"
+    android:background="#ffffff"
     >
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        >
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="出售商品"
+            android:drawableTop="@drawable/abc_btn_rating_star_off_mtrl_alpha"
+            android:layout_weight="1"
+
+            />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="查寻修改"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/abc_btn_rating_star_off_mtrl_alpha"
+
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="商品加入"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/abc_btn_rating_star_off_mtrl_alpha"
+
+            />
+    </LinearLayout>
+    <!-- 第二行 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        >
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text = "商品进货"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+            />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text = "商品下架"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+            />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text = "商品库存"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+
+            />
+
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        >
-        <ImageButton
-            android:id="@+id/image1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/abc_btn_rating_star_off_mtrl_alpha"
-            />
-        <ImageButton
-            android:id="@+id/image2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:src="@drawable/abc_btn_rating_star_off_mtrl_alpha"
-            />
-        <ImageButton
-            android:id="@+id/image3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/abc_btn_rating_star_off_mtrl_alpha"
-            />
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:src="@drawable/abc_btn_rating_star_off_mtrl_alpha"
-            />
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="horizontal"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
         >
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="image"
-            android:drawableTop="@drawable/abc_btn_rating_star_off_mtrl_alpha"
-            android:layout_weight="2"
+            android:text = "超市统计"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+
             />
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="image2"
+            android:text = "扫码比价"
             android:layout_weight="1"
-            android:drawableBottom="@drawable/abc_btn_rating_star_off_mtrl_alpha"
-            android:drawableTop="@drawable/abc_btn_rating_star_off_mtrl_alpha"
-            android:drawableLeft="@drawable/abc_btn_rating_star_off_mtrl_alpha"
-            android:drawableRight="@drawable/abc_btn_rating_star_off_mtrl_alpha"
-
+            android:drawableTop="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+            />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text = "设置"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/abc_btn_rating_star_on_mtrl_alpha"
             />
 
     </LinearLayout>
