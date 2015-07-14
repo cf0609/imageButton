@@ -5,108 +5,224 @@
     android:orientation="vertical"
     android:background="#ffffff"
     >
-
-    <LinearLayout
-
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginRight="12dp"
-        >
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="出售商品"
-            android:drawableTop="@drawable/abc_btn_rating_star_off_mtrl_alpha"
-            android:layout_weight="1"
-
-            />
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="查寻修改"
-            android:layout_weight="1"
-            android:drawableTop="@drawable/abc_btn_rating_star_off_mtrl_alpha"
-
-            />
-
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="商品加入"
-            android:layout_weight="1"
-            android:drawableTop="@drawable/abc_btn_rating_star_off_mtrl_alpha"
-
-            />
-    </LinearLayout>
-    <!-- 第二行 -->
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginRight="12dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+
         >
-        <Button
+        <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text = "商品进货"
-            android:layout_weight="1"
-            android:drawableTop="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+            android:text="商品条码"
+            android:textSize="24dp"
+            android:textColor="#000000"
             />
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text = "商品下架"
-            android:layout_weight="1"
-            android:drawableTop="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-            />
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text = "商品库存"
-            android:layout_weight="1"
-            android:drawableTop="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-
-            />
-
 
     </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <EditText
+                android:id="@+id/bar_edit_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="24dp"
+                android:hint="请输入关键字"
+
+                />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text=" 扫描条码"
+                android:textSize="24dp"
+                android:background="#00ef00"
+                android:textColor="#ffffff"
+                />
+            </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginRight="12dp"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
         >
-        <Button
+        <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text = "超市统计"
-            android:layout_weight="1"
-            android:drawableTop="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+            android:text="商品名称"
+            android:textSize="24dp"
+            android:textColor="#000000"
 
             />
-        <Button
+        <EditText
+            android:id="@+id/name_edit_text"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text = "扫码比价"
             android:layout_weight="1"
-            android:drawableTop="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-            />
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text = "设置"
-            android:layout_weight="1"
-            android:drawableTop="@drawable/abc_btn_rating_star_on_mtrl_alpha"
-            />
+            android:textSize="24dp"
+            android:hint="必填"
+            android:layout_marginTop="5dp"
 
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="商品厂商"
+            android:textSize="24dp"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp"
+
+            />
+        <EditText
+            android:id="@+id/cs_edit_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24dp"
+            android:hint="选填"
+            android:layout_marginTop="5dp"
+
+            />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="商品价格"
+                android:textSize="24dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="商品成本"
+                android:textSize="24dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="24dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="商品存货"
+                android:textSize="24dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="商品折扣"
+                android:textSize="24dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="24dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:text="添加"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#00ef00"
+            android:textColor="#ffffff"
+            />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textSize="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#00ef00"
+            android:textColor="#ffffff"
+            />
     </LinearLayout>
 </LinearLayout>
